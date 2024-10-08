@@ -1,0 +1,8 @@
+/* Resources.css */
+.resources-container {
+    padding: 20px;
+    background-image: url('https://media.istockphoto.com/id/1366554103/vector/mint-abstract-watercolor-texture-background.jpg?s=612x612&w=0&k=20&c=4n6PhMM13Uqlb6QVeyu5ayh4rMFoyF3XeleXCddHLCc='); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+}

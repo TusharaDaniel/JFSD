@@ -1,0 +1,45 @@
+.register-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 60px); /* Adjust for your navbar height */
+    background-color: #f7f7f7; /* Optional: Background color */
+}
+
+.card {
+    max-width: 400px; /* Maximum width for the card */
+    width: 100%; /* Full width up to max-width */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Background for the card */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements inside the card */
+}
+
+.card h2 {
+    text-align: center; /* Center the header text */
+}
+
+.card input {
+    margin: 10px 0; /* Space between inputs */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    width: 100%; /* Full width for inputs */
+}
+
+.card button {
+    padding: 10px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for button */
+}
+
+.card button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

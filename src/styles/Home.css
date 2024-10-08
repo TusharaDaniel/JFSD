@@ -1,0 +1,158 @@
+/* Home.css */
+.home-container {
+    padding: 20px;
+    background-image: url('https://images.vexels.com/content/100549/preview/abstract-design-background-vector-9436c9.png'); /* Change to your background image path */
+    background-size: cover;
+    background-position: center;
+    color: rgb(13, 12, 13); /* Change text color based on your background */
+    height: 100vh; /* Full height to cover the viewport */
+    position: relative;
+    background-repeat:  repeat;
+}
+
+
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Allows positioning on the page */
+    top: 20px; /* Position from the top */
+    left: 20px; /* Position from the left */
+}
+
+.content {
+    margin-top: 100px; /* Adjust the margin to create space for the logo */
+    padding: 20px; /* Additional padding for the content */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
+    border-radius: 8px; /* Optional: Rounded corners for the content box */
+}
+.content-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    margin-top: 100px; /* Space below the navbar, adjust as needed */
+}
+
+.importance-section {
+    flex: 2; /* Take more space for the importance section */
+    background-color: rgba(83, 226, 188, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px; /* Space between sections */
+}
+
+.faq-section {
+    flex: 1; /* Take less space for the FAQ section */
+    background-color: rgba(28, 178, 189, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2226ff; /* Customize the button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #a919e6; /* Darker shade on hover */
+}
+.learn-more-bt {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #198133; /* Customize the button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-bt:hover {
+    background-color: #e62e19; /* Darker shade on hover */
+}
+/* Cards Section Styles */
+.cards-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Adjust as necessary */
+}
+.how-to-deal-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+/* styles/Home.css */
+.adhd-image {
+    width: 50%; /* Adjust as necessary */
+    height: auto;
+    margin-top: 20px; /* Space between text and image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */
+}
+.psychologists-card {
+    background-color: #f9f9f9; /* Background color for the card */
+    border: 1px solid #ddd; /* Border for the card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Margin around the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.psychologists-card h2 {
+    margin-top: 0; /* Remove top margin */
+}
+.embedded-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between cards */
+    margin-top: 20px; /* Space above embedded cards */
+}
+
+.embedded-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    flex: 1 1 30%; /* Responsive card width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.about-us-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-us-card h2 {
+    margin-bottom: 15px;
+}
+
+.about-us-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}

@@ -1,0 +1,31 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-links {
+    margin-bottom: 20px;
+}
+
+.dashboard-links a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.dashboard-links a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
