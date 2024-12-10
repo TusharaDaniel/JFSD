@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 
 const PrivateRoute = ({ children }) => {
-    const isAuthenticated = localStorage.getItem('token'); // Example of token-based authentication check
+    const isAuthenticated = localStorage.getItem('role'); // Example of token-based authentication check
     return isAuthenticated ? children : <Navigate to="/login" />;
 };
 

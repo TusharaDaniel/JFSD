@@ -22,7 +22,25 @@ const Register = () => {
         // Redirect to dashboard after registration
         navigate('/dashboard'); // Redirect directly to the dashboard
     };
-
+    function registerUser(username, password) {
+        fetch('http://localhost:5000/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              console.log('User registered successfully');
+            } else {
+              console.log('Error:', data.message);
+            }
+          })
+          .catch(error => console.log('Error:', error));
+      }
+      
     return (
         <div 
             className="register-container" 
@@ -60,3 +78,13 @@ const Register = () => {
 };
 
 export default Register;
+
+
+
+
+
+
+
+
+
+

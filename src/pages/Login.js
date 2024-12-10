@@ -56,5 +56,24 @@ const Login = () => {
         </div>
     );
 };
-
+function loginUser(username, password) {
+    fetch('http://localhost:5000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, password }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.token) {
+          localStorage.setItem('token', data.token);  // Store JWT token
+          console.log('Login successful');
+        } else {
+          console.log('Error:', data.message);
+        }
+      })
+      .catch(error => console.log('Error:', error));
+  }
+  
 export default Login;

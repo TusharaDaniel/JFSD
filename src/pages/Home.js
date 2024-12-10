@@ -12,6 +12,7 @@ const Home = () => {
         <div className="home-container">
             <img src={logo} alt="MindMentor" className="logo" />
             <br/><br/><br/><br/>
+            
             <h1>Welcome to MindMentor</h1>
             <p>Your one-stop solution for mental well-being.</p>
 

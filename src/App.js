@@ -9,7 +9,7 @@ import Resources from './pages/Resources';  // Import Resources
 import SupportGroups from './pages/SupportGroups';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';  // Import Navbar
-
+import ScheduleSession from './pages/schedule_session';
 function App() {
     return (
         <Router>
@@ -22,6 +22,7 @@ function App() {
                 <Route path="/add-resource" element={<PrivateRoute><AddResource /></PrivateRoute>} />
                 <Route path="/resources" element={<Resources />} />  {/* Route for Resources */} 
                 <Route path="/support-groups" element={<PrivateRoute><SupportGroups /></PrivateRoute>} />
+                <Route path="/schedule-session" element={<ScheduleSession />}/>
             </Routes>
         </Router>
     );
